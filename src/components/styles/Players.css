@@ -1,0 +1,111 @@
+.container{
+    width: 80vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .playersentry{
+    width: 60vw;
+    text-align: center;
+    padding: 16vh 0;
+  }
+  input[type=text]{
+    display: block;
+    margin: 2%;
+    background-color: transparent;
+    width: 33vw;
+    border: 2px solid aliceblue;
+    height: 54px;
+    border-radius: 8px;
+    text-align: center;
+    color: rgb(53, 220, 241);
+    color: orange;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: rgba(61, 38, 38,0.3);
+    margin: auto;
+    margin-top: 20px;
+  }
+  input[type=text]:hover{
+    background-color: rgba(68, 16, 85, 0.6);
+    transition: background-color 0.3s ease-in;
+  }
+  input[type=button]{
+    width: 18vw;
+    border-radius: 23px;
+    margin: auto;
+    margin: 20px 0;
+    height: 46px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgba(61, 38, 38,0.3);
+    color: aliceblue;
+    border: 2px solid aliceblue;
+  }
+  input[type=button]:hover{
+    background-color: rgba(68, 16, 85, 0.6);
+    transition: background-color 0.3s ease-in;
+  }
+  input{
+    margin: auto;
+  }
+  ::-webkit-input-placeholder {
+    text-align: center;
+    color: rgb(92, 6, 24);
+    color: rgb(130, 85, 85);
+    font-size: large;
+  }
+  :-moz-placeholder {
+    text-align: center;
+  }
+  
+  input:active{
+    border-color: aqua;
+  }
+  
+  #phead{
+    padding-bottom: 20px;
+    background: -webkit-linear-gradient(rgb(245, 171, 36), rgb(212, 58, 2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Media query */
+
+  @media screen and (max-width:800px) {
+    .playersentry{
+      width: 75vw;
+    }
+    input[type=text]{
+      width: 45vw;
+    }
+    input[type=button]{
+      width: 25vw;
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    .playersentry{
+      width: 85vw;
+    }
+    input[type=text]{
+      width: 55vw;
+    }
+    input[type=button]{
+      width: 36vw;
+    }
+  }
+
+  @media screen and (max-width:340px) {
+    .playersentry{
+      width: 90vw;
+    }
+    input[type=text]{
+      width: 60vw;
+    }
+    input[type=button]{
+      width: 39vw;
+    }
+  }

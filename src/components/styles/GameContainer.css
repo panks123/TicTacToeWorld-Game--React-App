@@ -1,0 +1,160 @@
+.game-container{
+    display: flex;
+    margin: auto;
+    width: 80vw;
+    flex-wrap: wrap;    
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+.gamebox{
+    display: grid;
+    grid-template-columns: repeat(3, 9rem);
+    grid-template-rows: repeat(3, 9rem);
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    color: rgb(227, 214, 217);
+    font-size: 6vw;
+    font-weight: bold;
+    transition: background-color 0.7S ease-in;
+}
+.box:hover{
+    background: rgba(255, 72, 0, 0.3);
+    cursor: pointer; 
+}
+
+.boxtext:hover{
+    cursor: pointer;
+}
+.gameinfo
+{
+    margin-left: 1rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+}
+
+.winmsg{
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 2px;
+    background: -webkit-linear-gradient(rgb(245, 171, 36), rgb(212, 58, 2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+.wininfo{
+    text-align: center;
+}
+#winimg{
+    margin-top: 5px;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+
+.gamereset{
+    width: 30%;
+    margin: auto;
+    margin-top: 3px;
+    text-align: center;
+}
+#resetbtn{
+    width: 25vw;
+    padding: 10px;
+    font-size: large;
+    border: 2px solid rgb(159, 23, 93);
+    border-radius: 6px;
+    background-color: rgb(121, 6, 20);
+    color: beige;
+    cursor: pointer;
+    transition: background-color 0.4s ease-out;
+}
+#resetbtn:hover{
+    background-color: rgb(42, 9, 14);
+}
+
+@media screen and (max-width:1240px) {
+    .gameinfo{
+        margin-top: 1px;
+    }
+}
+@media screen and (max-width:1240px) {
+    .gamebox{
+        order:3
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container{
+        margin-top: 10px;
+    }
+    .gamebox{
+        grid-template-columns: repeat(3, 7rem);
+        grid-template-rows: repeat(3, 7rem);
+        padding: 2px;
+    }
+
+    .box{
+        font-size: 8vw;;
+    }
+
+    .gameinfo
+    {
+        width: 60vw;
+    }
+    .winmsg{
+        font-size: 2.1rem;
+        margin-bottom: 3px;
+    }
+    .gamereset{
+        width: 50%;
+        margin: auto; 
+    }
+    #resetbtn
+    {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width:500px){
+    .gamebox{
+        grid-template-columns: repeat(3, 6rem);
+        grid-template-rows: repeat(3, 6rem);
+    }
+    .box{
+        font-size: 10vw;;
+    }
+}
+
+@media screen and (max-width:400px){
+    .gamebox{
+        grid-template-columns: repeat(3, 5rem);
+        grid-template-rows: repeat(3, 5rem);
+    }
+    .box{
+        font-size: 13vw;;
+    }
+}
+
+@media screen and (max-height:650px){
+    .game-container{
+        margin-top: 2rem;
+    }
+}
+

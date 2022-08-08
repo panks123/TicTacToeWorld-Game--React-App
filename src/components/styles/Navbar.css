@@ -1,0 +1,30 @@
+.navbar{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgb(239, 242, 246);
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.logotext{
+    font-size: 1.6rem;
+    padding: 0 0.6rem;
+}
+.utilities{
+    margin-left: auto;
+    margin-right: 1.1rem;
+}
+a{
+    text-decoration: none;
+    color: rgb(239, 242, 246);
+}
+
+#soundbtn{
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+@media screen and (max-width:325px) {
+    .utilities{
+        margin-left: 0.6rem;
+    }
+}
